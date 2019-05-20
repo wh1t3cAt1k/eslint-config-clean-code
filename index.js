@@ -63,7 +63,6 @@ module.exports = {
         '@typescript-eslint/prefer-function-type': 'error',
         '@typescript-eslint/prefer-includes': 'error',
         '@typescript-eslint/prefer-interface': 'error',
-        '@typescript-eslint/promise-function-async': 'error',
         '@typescript-eslint/require-array-sort-compare': 'error',
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/unified-signatures': 'error',
