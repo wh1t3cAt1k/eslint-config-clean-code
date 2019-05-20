@@ -35,7 +35,7 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/no-extraneous-class': [
             'error',
-            { staticOnly: 'true' },
+            { allowStaticOnly: true },
         ],
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-namespace': 'error',
