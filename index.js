@@ -12,7 +12,14 @@ module.exports = {
     },
     plugins: ['eslint-plugin-import', '@typescript-eslint/eslint-plugin', 'eslint-plugin-react'],
     rules: {
+        // Necessary to prevent "unused React" trigger by no-unused-vars.
+        // -
+        'react/jsx-uses-react': 'error',
+        // Necessary to prevent no-unused-vars triggered by vars used inside JSX.
+        // -
         'react/jsx-uses-vars': 'error',
+        // Necessary to prevent "unused React" and JSX-only variables trigger by no-unused-vars.
+        // -
         "react/jsx-filename-extension": ['error', {
             "extensions": [".ts", ".tsx", ".js", ".jsx"]
         }],
