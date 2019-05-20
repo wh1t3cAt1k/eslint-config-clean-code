@@ -7,7 +7,7 @@ module.exports = {
             jsx: true,
         },
     },
-    plugins: ['eslint-plugin-import'],
+    plugins: ['eslint-plugin-import', '@typescript-eslint/eslint-plugin'],
     rules: {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': ['error', 'array'],
