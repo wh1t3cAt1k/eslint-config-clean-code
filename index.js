@@ -13,6 +13,9 @@ module.exports = {
     plugins: ['eslint-plugin-import', '@typescript-eslint/eslint-plugin', 'eslint-plugin-react'],
     rules: {
         'react/jsx-uses-vars': 'error',
+        "react/jsx-filename-extension": ['error', {
+            "extensions": [".ts", ".tsx", ".js", ".jsx"]
+        }],
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': ['error', 'array'],
         '@typescript-eslint/await-thenable': 'error',
