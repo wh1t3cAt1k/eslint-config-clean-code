@@ -25,5 +25,13 @@
   "devDependencies": {
     "prettier": "^1.17.1"
   },
-  "dependencies": {}
+  "peerDependencies": {
+    "typescript": "*",
+    "eslint": "*"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
 }
