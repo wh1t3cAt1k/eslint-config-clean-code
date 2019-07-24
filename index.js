@@ -66,6 +66,7 @@ module.exports = {
         '@typescript-eslint/require-array-sort-compare': 'error',
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/unified-signatures': 'error',
+        '@typescript-eslint/strict-boolean-expressions': 'error',
         'import/newline-after-import': ['error', { count: 1 }],
         'lines-between-class-members': [
             'error',
