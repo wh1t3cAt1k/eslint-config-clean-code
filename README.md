@@ -8,11 +8,17 @@ Because every TypeScript developer deserves not to think about code style and mi
 
 # Installation
 
+1. Pre-requisite: you need to have both ESLint and TypeScript installed, preferably locally.
 1. `npm install --save-dev eslint-config-clean-code`
 1. In your  `.eslintrc` file at the project root, add `extends: eslint-config-clean-code`.
-1. Customise the rules as required.
+1. Also add `parserOptions: { project: 'path.to.tsconfig.json' }`.
+1. Customise the rules if required.
 
 # Choices
+
+## TypeScript
+
+Because we believe that quality software development is impossible without types.
 
 ## Single automatic code formatting
 
