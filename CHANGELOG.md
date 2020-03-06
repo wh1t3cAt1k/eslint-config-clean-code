@@ -1,3 +1,7 @@
+# 3.0.2
+
+Removed the unavailable rule `prefer-interface`.
+
 # 3.0.1
 
 Fix the `array-type` bug introduced by a breaking change in rule configuration.

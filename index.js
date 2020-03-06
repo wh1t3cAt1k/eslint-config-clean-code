@@ -40,7 +40,12 @@ module.exports = {
             '^T[A-Z][a-zA-Z]+$',
         ],
         '@typescript-eslint/interface-name-prefix': ['error', 'always'],
-        '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
+        '@typescript-eslint/consistent-type-assertions': ['error', {
+            // Single assertion style in TS / TSX files.
+            // -
+            assertionStyle: 'as',
+            objectLiteralTypeAssertions: 'allow',
+        }],
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
@@ -59,7 +64,6 @@ module.exports = {
         '@typescript-eslint/prefer-for-of': 'error',
         '@typescript-eslint/prefer-function-type': 'error',
         '@typescript-eslint/prefer-includes': 'error',
-        '@typescript-eslint/prefer-interface': 'error',
         '@typescript-eslint/require-array-sort-compare': 'error',
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/unified-signatures': 'error',
