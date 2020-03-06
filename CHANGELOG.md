@@ -1,3 +1,7 @@
+# 3.0.1
+
+Fix the `array-type` bug introduced by a breaking change in rule configuration.
+
 # 3.0.0
 
 Updated minimal dependencies to support latest TypeScript features:

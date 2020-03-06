@@ -21,7 +21,7 @@ module.exports = {
             "extensions": [".ts", ".tsx", ".js", ".jsx"]
         }],
         '@typescript-eslint/adjacent-overload-signatures': 'error',
-        '@typescript-eslint/array-type': ['error', 'array'],
+        '@typescript-eslint/array-type': 'error',
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/ban-types': [
             'error',
