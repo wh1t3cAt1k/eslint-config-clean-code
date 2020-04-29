@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.0
+
+`restrict-template-expression` now allows numbers.
+
 ## 4.0.1
 
 **BREAKING CHANGES**, Typescript 3.8.2 required.

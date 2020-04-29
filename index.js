@@ -99,7 +99,7 @@ module.exports = {
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/strict-boolean-expressions': 'error',
-        '@typescript-eslint/restrict-template-expressions': 'error',
+        '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
         'import/newline-after-import': ['error', { count: 1 }],
         'lines-between-class-members': [
             'error',
