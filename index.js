@@ -154,6 +154,11 @@ module.exports = {
                 format: ['PascalCase'],
             },
             {
+                selector: 'interface',
+                format: ['PascalCase'],
+                prefix: ['I'],
+            },
+            {
                 selector: 'typeParameter',
                 format: ['PascalCase'],
                 prefix: ['T'],

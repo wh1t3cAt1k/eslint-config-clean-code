@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.0
+
+**BREAKING CHANGES**: require the `I` prefix for interfaces in `@typescript-eslint/naming-convention`.
+
 ## 5.0.0
 
 **BREAKING CHANGES**: introduce `@typescript-eslint/naming-convention`.
