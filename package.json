@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-clean-code",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "ESLint Configuration for Clean Typescript Code",
   "main": "index.js",
   "scripts": {
