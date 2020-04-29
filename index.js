@@ -22,7 +22,21 @@ module.exports = {
         }],
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'error',
+        '@typescript-eslint/promise-function-async': 'error',
+        '@typescript-eslint/no-misused-new': 'error',
+        '@typescript-eslint/no-misused-promises': 'error',
         '@typescript-eslint/await-thenable': 'error',
+        // Require await section.
+        // -
+        'require-await': 'off',
+        '@typescript-eslint/require-await': 'error',
+        // Returning awaited values section.
+        // -
+        'no-return-await': 'off',
+        '@typescript-eslint/return-await': ['error', 'in-try-catch'],
+        // -
+        '@typescript-eslint/no-unsafe-return': 'error',
+        '@typescript-eslint/prefer-ts-expect-error': 'error',
         '@typescript-eslint/ban-types': [
             'error',
             {
@@ -47,27 +61,45 @@ module.exports = {
             objectLiteralTypeAssertions: 'allow',
         }],
         '@typescript-eslint/no-array-constructor': 'error',
+        '@typescript-eslint/no-throw-literal': 'error',
+        '@typescript-eslint/no-invalid-void-type': 'error',
+        '@typescript-eslint/switch-exhaustiveness-check': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
+        '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-unnecessary-qualifier': 'error',
+        '@typescript-eslint/method-signature-style': ['error', 'property'],
+        '@typescript-eslint/no-base-to-string': 'error',
         '@typescript-eslint/no-extraneous-class': [
             'error',
             { allowStaticOnly: true },
         ],
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
         '@typescript-eslint/no-unused-vars': [
             'error',
             { argsIgnorePattern: '^_' },
         ],
+        // Useless constructor section
+        // -
+        'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
+        // -
+        '@typescript-eslint/prefer-string-starts-ends-with': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
-        '@typescript-eslint/prefer-function-type': 'error',
         '@typescript-eslint/prefer-includes': 'error',
+        '@typescript-eslint/prefer-readonly': 'error',
+        '@typescript-eslint/prefer-nullish-coalescing': 'error',
+        '@typescript-eslint/prefer-function-type': 'error',
+        '@typescript-eslint/prefer-optional-chain': 'error',
+        '@typescript-eslint/prefer-as-const': 'error',
         '@typescript-eslint/require-array-sort-compare': 'error',
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/strict-boolean-expressions': 'error',
+        '@typescript-eslint/restrict-template-expressions': 'error',
         'import/newline-after-import': ['error', { count: 1 }],
         'lines-between-class-members': [
             'error',
