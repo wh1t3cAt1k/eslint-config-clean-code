@@ -1,8 +1,12 @@
 # Changelog
 
+## 5.0.0
+
+**BREAKING CHANGES**: introduce `@typescript-eslint/naming-convention`.
+
 ## 4.1.0
 
-`restrict-template-expression` now allows numbers.
+`@typescript-eslint/restrict-template-expression` now allows numbers.
 
 ## 4.0.1
 

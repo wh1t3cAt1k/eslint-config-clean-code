@@ -7,7 +7,11 @@ module.exports = {
             jsx: true,
         },
     },
-    plugins: ['eslint-plugin-import', '@typescript-eslint/eslint-plugin', 'eslint-plugin-react'],
+    plugins: [
+        'eslint-plugin-import',
+        '@typescript-eslint/eslint-plugin',
+        'eslint-plugin-react',
+    ],
     rules: {
         // Necessary to prevent "unused React" trigger by no-unused-vars.
         // -
@@ -17,9 +21,12 @@ module.exports = {
         'react/jsx-uses-vars': 'error',
         // Necessary to prevent "unused React" and JSX-only variables trigger by no-unused-vars.
         // -
-        "react/jsx-filename-extension": ['error', {
-            "extensions": [".ts", ".tsx", ".js", ".jsx"]
-        }],
+        'react/jsx-filename-extension': [
+            'error',
+            {
+                extensions: ['.ts', '.tsx', '.js', '.jsx'],
+            },
+        ],
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'error',
         '@typescript-eslint/promise-function-async': 'error',
@@ -54,12 +61,15 @@ module.exports = {
             '^T[A-Z][a-zA-Z]+$',
         ],
         '@typescript-eslint/interface-name-prefix': ['error', 'always'],
-        '@typescript-eslint/consistent-type-assertions': ['error', {
-            // Single assertion style in TS / TSX files.
-            // -
-            assertionStyle: 'as',
-            objectLiteralTypeAssertions: 'allow',
-        }],
+        '@typescript-eslint/consistent-type-assertions': [
+            'error',
+            {
+                // Single assertion style in TS / TSX files.
+                // -
+                assertionStyle: 'as',
+                objectLiteralTypeAssertions: 'allow',
+            },
+        ],
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-invalid-void-type': 'error',
@@ -76,7 +86,10 @@ module.exports = {
         ],
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-namespace': 'error',
-        '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
+        '@typescript-eslint/no-unnecessary-condition': [
+            'error',
+            { allowConstantLoopConditions: true },
+        ],
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
         '@typescript-eslint/no-unused-vars': [
             'error',
@@ -99,7 +112,57 @@ module.exports = {
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/strict-boolean-expressions': 'error',
-        '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                selector: 'default',
+                format: ['camelCase'],
+            },
+            {
+                selector: 'variable',
+                format: ['camelCase', 'UPPER_CASE'],
+            },
+            {
+                selector: 'variable',
+                types: ['boolean'],
+                format: ['PascalCase'],
+                prefix: [
+                    'is',
+                    'should',
+                    'has',
+                    'can',
+                    'did',
+                    'will',
+                    'does',
+                    'are',
+                    'do',
+                ],
+            },
+            {
+                selector: 'parameter',
+                format: ['camelCase'],
+                leadingUnderscore: 'allow',
+            },
+            {
+                selector: 'memberLike',
+                modifiers: ['private'],
+                format: ['camelCase'],
+                leadingUnderscore: 'require',
+            },
+            {
+                selector: 'typeLike',
+                format: ['PascalCase'],
+            },
+            {
+                selector: 'typeParameter',
+                format: ['PascalCase'],
+                prefix: ['T'],
+            },
+        ],
+        '@typescript-eslint/restrict-template-expressions': [
+            'error',
+            { allowNumber: true },
+        ],
         'import/newline-after-import': ['error', { count: 1 }],
         'lines-between-class-members': [
             'error',
