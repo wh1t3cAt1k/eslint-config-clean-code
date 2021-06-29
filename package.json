@@ -23,16 +23,17 @@
   },
   "homepage": "https://github.com/wh1t3cAt1k/eslint-config-clean-code#readme",
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "prettier": "2.3.2"
   },
   "peerDependencies": {
-    "typescript": "^3.8.2",
+    "typescript": "4.3.4",
     "eslint": "*"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.30.0",
-    "@typescript-eslint/parser": "^2.30.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-react": "^7.19.0"
+    "@typescript-eslint/eslint-plugin": "4.28.1",
+    "@typescript-eslint/parser": "4.28.1",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-react-hooks": "4.2.0"
   }
 }
