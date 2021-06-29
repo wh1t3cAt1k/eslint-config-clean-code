@@ -1,5 +1,12 @@
 # Changelog
 
+## 7.0.1
+
+Bug fixes:
+
+- Removed obsolete `interface-name-prefix` rule.
+- Removed obsolete `generic-type-naming` rule.
+
 ## 7.0.0
 
 **BREAKING CHANGES**: Typescript 4.3.4 is required for this version.

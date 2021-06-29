@@ -62,11 +62,6 @@ module.exports = {
             },
         ],
         '@typescript-eslint/explicit-member-accessibility': 'error',
-        '@typescript-eslint/generic-type-naming': [
-            'error',
-            '^T[A-Z][a-zA-Z]+$',
-        ],
-        '@typescript-eslint/interface-name-prefix': ['error', 'always'],
         '@typescript-eslint/consistent-type-assertions': [
             'error',
             {
