@@ -31,7 +31,9 @@ module.exports = {
         "no-loss-of-precision": "off",
         "@typescript-eslint/no-loss-of-precision": ["error"],
         '@typescript-eslint/no-unnecessary-type-constraint': 'error',
-        '@typescript-eslint/no-confusing-void-expression': 'error',
+        '@typescript-eslint/no-confusing-void-expression': ['error', {
+            ignoreArrowShorthand: true,
+        }],
         '@typescript-eslint/no-unsafe-argument': 'error',
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'error',
