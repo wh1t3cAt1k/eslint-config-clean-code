@@ -1,5 +1,22 @@
 # Changelog
 
+## 7.0.0
+
+**BREAKING CHANGES**: Typescript 4.3.4 is required for this version.
+
+Also upgraded all other dependencies to the latest versions.
+
+Added the following rules:
+
+```typescript
+'@typescript-eslint/consistent-type-imports': 'error',
+"no-loss-of-precision": "off",
+"@typescript-eslint/no-loss-of-precision": ["error"],
+'@typescript-eslint/no-unnecessary-type-constraint': 'error',
+'@typescript-eslint/no-confusing-void-expression': 'error',
+'@typescript-eslint/no-unsafe-argument': 'error',
+```
+
 ## 6.1.0
 
 Allow PascalCase for variables. Use case: React components.
