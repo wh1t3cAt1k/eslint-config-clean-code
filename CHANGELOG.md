@@ -1,5 +1,9 @@
 # Changelog
 
+## 8.0.0
+
+Bump all packages to the latest version.
+
 ## 7.1.0
 
 Relaxed `@typescript-eslint/no-confusing-void-expression` to allow arrow shorthand functions as long as they're explicitly typed as void-returning.
